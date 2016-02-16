@@ -7,7 +7,7 @@ use File::Copy;
 use File::Basename;
 use File::Path;
 
-unshift(@INC, $ENV{DPO2_CORE_ROOT} . "/scripts");
+unshift(@INC, $ENV{DPO_CORE_ROOT} . "/scripts");
 require DPOPostbuild;
 
 
