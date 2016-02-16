@@ -1,0 +1,9 @@
+
+#include "ClassWithRes.evc.h"
+
+BEGIN_EVENT_DEF_NAMESPACE(ClassWithResEvents)
+	STATIC_EVENT_DEF(ev1, 1, "Hello, %1(%s)!")
+	STATIC_EVENT_DEF(ev2, 2, "How old are You?")
+	STATIC_EVENT_DEF(ev3, 3, "I am %1(%d) years old.")
+END_EVENT_NAMESPACE()
+

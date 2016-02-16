@@ -1,0 +1,25 @@
+BEH means BasicEventHandling.
+
+Sometimes we don't know how to manage errors.
+
+Simply returning a number ?
+Logging before returning a number ?
+
+BEH provides an elegant way to deal with errors.
+Events are declared/defined as objects. We simply raise
+event. It is up to the caller to do whatever he wants defining
+the behaviour of the raise.
+
+BEH allows to define events in different languages.
+
+An event can transit between processes via Corba.
+
+
+BEH has been generated with DPO (https://github.com/htalbot/DPOpp)
+
+- Generate projects/solution with dpo.pl
+
+- Build: Batch-build twice (BasicEventSyntaxChecker release is called before
+  it is built).
+
+- To push it into a pool, freeze it with dpo.pl (https://github.com/htalbot/DPOpp)

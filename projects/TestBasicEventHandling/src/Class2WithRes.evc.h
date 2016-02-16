@@ -1,0 +1,14 @@
+#ifndef __CLASS2WITHRES_EVC_H__
+#define __CLASS2WITHRES_EVC_H__
+
+#include "BasicEventHandling/BasicEventHandling.h"
+
+BEGIN_EVENT_DECL_NAMESPACE(Class2WithResEvents)
+	STATIC_EVENT_DECL(ev1)
+	STATIC_EVENT_DECL(ev2)
+	STATIC_EVENT_DECL(ev3)
+	STATIC_EVENT_DECL(ev4)
+END_EVENT_NAMESPACE()
+
+
+#endif // __CLASS2WITHRES_EVC_H__

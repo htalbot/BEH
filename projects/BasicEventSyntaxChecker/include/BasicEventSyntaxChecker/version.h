@@ -1,0 +1,25 @@
+
+#ifndef __BASICEVENTSYNTAXCHECKER_VERSION_H__
+#define __BASICEVENTSYNTAXCHECKER_VERSION_H__
+
+#define BASICEVENTSYNTAXCHECKER_MAJOR 1
+#define BASICEVENTSYNTAXCHECKER_MINOR 0
+#define BASICEVENTSYNTAXCHECKER_PATCH 1
+
+
+#if defined _MSC_VER
+#   ifdef _DEBUG
+        const char BASICEVENTSYNTAXCHECKER_DebugFlag[] = "DEBUG";
+#   else
+        const char BASICEVENTSYNTAXCHECKER_DebugFlag[] = "RELEASE";
+#   endif
+#else
+#   ifdef DEBUG
+        const char BASICEVENTSYNTAXCHECKER_DebugFlag[] = "DEBUG";
+#   else
+        const char BASICEVENTSYNTAXCHECKER_DebugFlag[] = "RELEASE";
+#   endif
+#endif
+
+
+#endif // __BASICEVENTSYNTAXCHECKER_VERSION_H__

@@ -1,0 +1,5 @@
+project: IBasicEventCorba_dependencies {
+    includes += $(IBASICEVENTCORBA_PRJ_ROOT)/include
+    libpaths += $(IBASICEVENTCORBA_PRJ_ROOT)/lib
+    libs += IBasicEventCorba
+}

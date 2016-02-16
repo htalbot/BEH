@@ -1,0 +1,11 @@
+
+#include "Class2WithRes.h"
+#include "Class2WithRes.evc.h"
+
+BEGIN_EVENT_DEF_NAMESPACE(Class2WithResEvents)
+	STATIC_EVENT_DEF(ev1, 1, "Bonjour, %1(%s)!")
+	STATIC_EVENT_DEF(ev2, 2, "Quel age avez-vous?")
+	STATIC_EVENT_DEF(ev3, 3, "J'ai %1(%d) ans.")
+	STATIC_EVENT_DEF(ev4, 4, "Et vous?.")
+END_EVENT_NAMESPACE()
+

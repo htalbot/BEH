@@ -1,0 +1,61 @@
+
+module IBASICEVENTCORBA_module
+{
+    //*******************************************
+    enum VariantTypes { VT_LONG,
+                        VT_ULONG,
+                        VT_DOUBLE,
+                        VT_LONGLONG,
+                        VT_ULONGLONG,
+                        VT_STRING };
+
+    //*******************************************
+    union Arg switch (VariantTypes)
+    {
+    case VT_LONG:
+        long lValue;
+    case VT_ULONG:
+        unsigned long ulValue;
+    case VT_DOUBLE:
+        double dValue;
+    case VT_LONGLONG:
+        unsigned long long llValue;
+    case VT_ULONGLONG:
+        unsigned long long ullValue;
+    case VT_STRING:
+        string strValue;
+    };
+
+    //*******************************************
+    struct EventArg
+    {
+        string id_;
+        Arg arg_;
+    };
+
+    //*******************************************
+    typedef sequence<EventArg> EventArgSeq;
+
+    //*******************************************
+    struct EventSpec
+    {
+        long param_number;
+        string spec_string;
+    };
+
+    //*******************************************
+    typedef sequence<EventSpec> EventSpecSeq;
+
+    //*******************************************
+    struct BasicEventCorba
+    {
+        string namespace_;
+        long event_id_;
+        string format_;
+        EventSpecSeq map_spec_;
+        EventArgSeq args_;
+        string node_id_;
+        string source_id_;
+        long severity_;
+    };
+};

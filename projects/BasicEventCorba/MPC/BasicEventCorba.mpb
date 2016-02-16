@@ -1,0 +1,5 @@
+project: BasicEventCorba_dependencies {
+    includes += $(BASICEVENTCORBA_PRJ_ROOT)/include
+    libpaths += $(BASICEVENTCORBA_PRJ_ROOT)/lib
+    libs += BasicEventCorba
+}

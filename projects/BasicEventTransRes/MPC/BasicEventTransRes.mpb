@@ -1,0 +1,5 @@
+project: BasicEventTransRes_dependencies {
+    includes += $(BASICEVENTTRANSRES_PRJ_ROOT)/include
+    libpaths += $(BASICEVENTTRANSRES_PRJ_ROOT)/lib
+    libs += BasicEventTransRes
+}

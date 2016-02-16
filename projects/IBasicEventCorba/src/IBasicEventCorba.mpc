@@ -1,0 +1,5 @@
+project : IBasicEventCorba_ex {
+
+    dynamicflags = IBASICEVENTCORBA_BUILD_DLL
+    idlflags += -Wb,export_macro=IBASICEVENTCORBA_Export -Wb,export_include=IBASICEVENTCORBA_Export.h -GT
+}

@@ -1,0 +1,15 @@
+project {
+
+    Define_Custom(EVC) {
+        automatic = 1
+        command = $(BASICEVENTHANDLING_PRJ_ROOT)/bin/BasicEventSyntaxChecker
+        commandflags = -f
+        inputext = .evc
+        source_outputext = .events.cpp
+    }
+
+    // Custom Component
+    EVC_Files {
+        *.evc
+    }
+}

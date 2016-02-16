@@ -1,0 +1,5 @@
+project: BasicEventHandling_dependencies, BasicEventHandlingEVC {
+    includes += $(BASICEVENTHANDLING_PRJ_ROOT)/include
+    libpaths += $(BASICEVENTHANDLING_PRJ_ROOT)/lib
+    libs += BasicEventHandling
+}

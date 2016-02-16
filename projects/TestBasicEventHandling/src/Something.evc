@@ -1,0 +1,7 @@
+#include "Something.evc.h"
+
+BEGIN_EVENT_DEF_NAMESPACE(SomethingEvents)
+    STATIC_EVENT_DEF(ev_doing_Something, 1, "doing something interresting..., priority = %1(%d), value = %2(%d), You're not dreaming, the priority is %1(%d).")
+    STATIC_EVENT_DEF(ev_msg_with_double, 2, "Here is a double: %1(%0.3f).")
+    STATIC_EVENT_DEF(ev_msg_with_sized_string, 3, "Here is a sized string: %1(%10s).")
+END_EVENT_NAMESPACE()
